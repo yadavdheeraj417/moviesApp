@@ -1,0 +1,8 @@
+.movie-card {
+  max-width: 300px;
+  margin: 1rem auto;
+}
+
+.details {
+  padding: 0.5rem;
+}

@@ -1,0 +1,23 @@
+.movie-card {
+  max-width: 300px;
+  margin: 0.5rem;
+  max-height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 100%;
+  overflow-x: auto;
+  max-height: 20rem;
+  display: -webkit-inline-box;
+}
+
+.mat-card-header .mat-card-title {
+  font-size: 14px;
+}
+
+.mat-card-image {
+  height:  300px;
+  width: 300px;
+}

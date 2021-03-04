@@ -1,0 +1,12 @@
+<mat-card *ngFor="let row of genresList">
+  <mat-card-header>
+    <mat-card-title>
+      {{row.name}}
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-movies-list
+      [genreId]="row.id"
+    ></app-movies-list>
+  </mat-card-content>
+</mat-card>

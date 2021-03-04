@@ -1,0 +1,8 @@
+<div class="wrapper">
+  <mat-card class="movie-card" *ngFor="let movie of moviesList" (click)="onSelect(movie.id)">
+    <mat-card-header>
+      <mat-card-title>{{movie.title}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{movie.poster_path}}" alt="Poster Image">
+  </mat-card>
+</div>

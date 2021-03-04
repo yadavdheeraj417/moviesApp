@@ -1,0 +1,14 @@
+<mat-card class="movie-card">
+  <mat-card-header>
+    <mat-card-title>{{movieDetails.title}}</mat-card-title>
+    <mat-card-subtitle>{{movieDetails.overview}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="details"><a href="{{movieDetails.backdrop_path}}">Cover Image</a></div>
+    <div class="details"><a href="{{movieDetails.poster_path}}">Poster Image</a></div>
+    <div class="details">Language: {{movieDetails.original_language}}</div>
+    <div class="details">Popularity: {{movieDetails.popularity}}</div>
+    <div class="details">Release Date: {{movieDetails.release_date}}</div>
+    <div class="details">Revenue: {{movieDetails.revenue}}</div>
+  </mat-card-content>
+</mat-card>

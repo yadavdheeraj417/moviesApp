@@ -1,0 +1,12 @@
+.header {
+  background-color: blueviolet;
+}
+
+.header h2 {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
