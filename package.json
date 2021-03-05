@@ -21,7 +21,6 @@
     "@angular/platform-browser": "~11.2.3",
     "@angular/platform-browser-dynamic": "~11.2.3",
     "@angular/router": "~11.2.3",
-    "ngx-owl-carousel-o": "^5.0.0",
     "ngx-webstorage": "^7.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
