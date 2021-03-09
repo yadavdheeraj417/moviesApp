@@ -4,6 +4,7 @@
   max-height: 300px;
   overflow: hidden;
   cursor: pointer;
+  background-color: gold;
 }
 
 .wrapper {
@@ -15,6 +16,7 @@
 
 .mat-card-header .mat-card-title {
   font-size: 14px;
+  color: #675252;
 }
 
 .mat-card-image {

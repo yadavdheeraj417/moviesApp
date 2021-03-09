@@ -1,5 +1,5 @@
 .header {
-  background-color: blueviolet;
+  background-color: #682108;
 }
 
 .header h2 {
@@ -8,5 +8,6 @@
   text-align: center;
   padding: 1rem;
   font-size: 2rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-family: 'Crete Round', serif;
 }

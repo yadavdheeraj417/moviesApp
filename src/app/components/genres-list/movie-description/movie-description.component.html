@@ -1,14 +1,48 @@
 <mat-card class="movie-card">
+  <div class="page-title">
+    <h1><mat-icon>movie_creation</mat-icon> Movie Details</h1>
+  </div>
   <mat-card-header>
+    <div mat-card-avatar
+         [style.backgroundImage]="'url(http://image.tmdb.org/t/p/original' + movieDetails.poster_path + ')'"
+         [style.backgroundSize]="'cover'"
+    ></div>
     <mat-card-title>{{movieDetails.title}}</mat-card-title>
-    <mat-card-subtitle>{{movieDetails.overview}}</mat-card-subtitle>
   </mat-card-header>
+  <img mat-card-image src="http://image.tmdb.org/t/p/original{{movieDetails.backdrop_path}}" alt="Poster Image">
   <mat-card-content>
-    <div class="details"><a href="{{movieDetails.backdrop_path}}">Cover Image</a></div>
-    <div class="details"><a href="{{movieDetails.poster_path}}">Poster Image</a></div>
-    <div class="details">Language: {{movieDetails.original_language}}</div>
-    <div class="details">Popularity: {{movieDetails.popularity}}</div>
-    <div class="details">Release Date: {{movieDetails.release_date}}</div>
-    <div class="details">Revenue: {{movieDetails.revenue}}</div>
+    <div class="details overview">
+      <p>{{movieDetails.overview}}</p>
+    </div>
+<!--    <div class="details"><a href="{{movieDetails.backdrop_path}}">Cover Image</a></div>-->
+<!--    <div class="details"><a href="{{movieDetails.poster_path}}">Poster Image</a></div>-->
+    <div class="details">
+      <span class="language">
+        <span class="left">Language:</span>
+        <span class="right">{{movieDetails.original_language}}</span>
+      </span>
+      <span class="popularity">
+        <span class="left">Popularity:</span>
+        <span class="right">{{movieDetails.popularity}}</span>
+      </span>
+    </div>
+    <div class="details">
+      <span class="releaseDate">
+        <span class="left">Release Date:</span>
+        <span class="right">
+          {{movieDetails.release_date | date: 'dd MMMM yyyy' }}
+        </span>
+      </span>
+      <span class="revenue">
+        <span class="left">Revenue:</span>
+        <span class="right">{{movieDetails.revenue}}</span>
+      </span>
+    </div>
   </mat-card-content>
+  <mat-card-actions>
+    <button class="back-button" routerLink="/genres-list" mat-button>
+      <mat-icon>keyboard_backspace</mat-icon>
+      Back
+    </button>
+  </mat-card-actions>
 </mat-card>
